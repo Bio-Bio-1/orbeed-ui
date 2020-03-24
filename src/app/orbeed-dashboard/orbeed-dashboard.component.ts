@@ -21,6 +21,10 @@ export class OrbeedDashboardComponent {
       }
 
       return [
+        { title: 'TOTAL CASES', cols: 1, rows: 1 },
+        { title: 'CURRENTLY IN HOSPITAL', cols: 1, rows: 1 },
+        { title: 'DECEASED', cols: 1, rows: 1 },
+        { title: 'DISCHARGED', cols: 1, rows: 1 },
         { title: 'Card 1', cols: 2, rows: 1 },
         { title: 'Card 2', cols: 1, rows: 1 },
         { title: 'Card 3', cols: 1, rows: 2 },

@@ -1,18 +1,176 @@
 <div class="grid-container">
   <h1 class="mat-h1">Dashboard of the COVID-19 Virus Outbreak in Bangladesh</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+
+  <mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile colspan="1" rowspan="1">
       <mat-card class="dashboard-card mat-elevation-z0">
         <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
-            </mat-menu>
+          <mat-card-title >
+            TOTAL CASES <br>
+            <span class="mat-h1">558</span><span class="mat-hint mat-warn">&nbsp; 14 in ICU</span>
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            TOTAL CASES <br>
+            <span class="mat-h1">401</span><span class="mat-hint mat-warn">&nbsp; 79% of total cases</span>
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            TOTAL CASES <br>
+            <span class="mat-h1">2</span><span class="mat-hint mat-warn">&nbsp; 0.4% of total cases</span>
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            TOTAL CASES <br>
+            <span class="mat-h1">156</span><span class="mat-hint mat-warn">&nbsp; 28% of total cases</span>
+          </mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </mat-grid-tile>
+
+
+  </mat-grid-list>
+
+  <mat-grid-list cols="4" rowHeight="350px">
+    <mat-grid-tile colspan="3" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            NUMBER OF CASES <br>
+            <span class="mat-hint">21 Jan 2020 to 21st Mar 202</span>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            GENDER
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list cols="4" rowHeight="350px">
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            NATIONALITY
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="2" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            AGE AND GENDER DISTRIBUTION
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            INFECTION SOURCES
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list cols="4" rowHeight="350px">
+
+    <mat-grid-tile colspan="2" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            GENDER OVER TIME <br>
+            <span class="mat-hint">Showing Male Cases vs Female Over time</span>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="2" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            INFECTION SOURCES OVER TIME <br>
+            <span class="mat-hint">Showing Number of Imported cases vs Local Transmission Over Time</span>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-grid-list cols="4" rowHeight="350px">
+
+    <mat-grid-tile colspan="3" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            CASES <br>
+            <span class="mat-hint">Reported Cases in Singapore</span>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0">
+        <mat-card-header>
+          <mat-card-title >
+            Clusters
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
@@ -22,3 +180,4 @@
     </mat-grid-tile>
   </mat-grid-list>
 </div>
+<br><br><br>
