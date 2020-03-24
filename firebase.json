@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/orbeed-ui",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
